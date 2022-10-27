@@ -5,7 +5,7 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 def main():
     driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()))
-    driver.get("https://www.google.com")
+    driver.get("https://admin-staging.payfi.ng/")
     driver.close()
 
 
