@@ -7,10 +7,12 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 def main():
     driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()))
     driver.get("https://admin-staging.payfi.ng/")
-    driver.find_element(By.NAME, "email")
-
-
-
+    login = driver.find_element(By.NAME, "email").send_keys("olamide.john@outlook.com")
+    password = driver.find_element(By.NAME, "password").send_keys("Testqa1101$")
+    button = driver.find_element(By.CSS_SELECTOR, "#root > div > div:nth-child(2) > div > div > form > div > div.col-md-6.col-12.register-form-view-cover-row-form > div > button")
+    links = driver.find_elements(By.TAG_NAME, "a")
+    for link in links:
+        print("link", links.text)
     driver.close()
 
 
