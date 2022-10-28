@@ -12,7 +12,7 @@ def main():
     button = driver.find_element(By.CSS_SELECTOR, "#root > div > div:nth-child(2) > div > div > form > div > div.col-md-6.col-12.register-form-view-cover-row-form > div > button")
     links = driver.find_elements(By.TAG_NAME, "a")
     for link in links:
-        print("link", links.text)
+        print("link", link.text)
     driver.close()
 
 
