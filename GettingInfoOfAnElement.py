@@ -25,7 +25,7 @@ def main():
         element = driver.find_element(By.CSS_SELECTOR, "#root > div > div:nth-child(2) > div > div > form > div > "
                                                       "div.col-md-6.col-12.register-form-view-cover-row-form > div > "
                                                       "button").click()
-        sleep(30)
+        sleep(5)
         driver.close()
 
 main()
