@@ -19,12 +19,10 @@ def print_element_of_fields(element):
 
 def main():
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-        driver.get("https://admin-staging.payfi.ng/")
-        login = driver.find_element(By.NAME, "email").send_keys("olamide.john@payfi.ng")
-        password = driver.find_element(By.NAME, "password").send_keys("Testqa1101$")
-        element = driver.find_element(By.CSS_SELECTOR, "#root > div > div:nth-child(2) > div > div > form > div > "
-                                                      "div.col-md-6.col-12.register-form-view-cover-row-form > div > "
-                                                      "button").click()
+        driver.get("https://www.testifyltd.com/contact")
+        element = driver.find_element(By.TAG_NAME, "h2")
+        print_element_of_fields(element)
+
         sleep(5)
         driver.close()
 
