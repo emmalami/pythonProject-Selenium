@@ -20,66 +20,39 @@ class AppDynamicsJob(unittest.TestCase):
 
     def test_app_dynamics_job(self):
         driver = self.driver
-        name("passworddriver.get("https://admin.payfi.ng/")
+        driver.get("https://admin.payfi.ng/")
         driver.find_element_by_name("email").clear()
         driver.find_element_by_name("email").send_keys("Olamide.john@payfi.ng")
         driver.find_element_by_name("password").clear()
         driver.find_element_by_name("password").send_keys("Testqa1101$")
-        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/form/div/div[2]/div").click()
         driver.find_element_by_name("email").click()
-        driver.find_element_by_name("email").click()
-        # ERROR: Caught exception [ERROR: Unsupported command [doubleClick | name=email | ]]
-        driver.find_element_by_name("email").click()
-        driver.find_element_by_name("email").clear()
-        driver.find_element_by_name("email").send_keys("olamide.john@payfi.ng")
         driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/form/div/div[2]/div/button").click()
         driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div/div[2]/div[2]/div/div/div/div[2]/div[2]/div/div/button/span").click()
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div/div[2]/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[2]/div/div/span[2]").click()
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div/div[2]/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[3]/div[2]/button/span").click()
+        driver.find_element_by_xpath(
             "//div[@id='root']/div/div[2]/div/div/div/div/div/div/div/div[2]/ul/li[2]/a/p").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[2]").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[3]").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[4]").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[5]").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[6]").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/button/span").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div/div[2]/div/div/span[2]").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div/div[3]/div[2]/button/span").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/button/span").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/ul/li").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div[2]/div/ul/li[2]").click()
-        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[3]/a/p").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[2]").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[3]").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[4]").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[5]").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[6]").click()
-        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[2]/a/p").click()
         driver.find_element_by_name("search").click()
         driver.find_element_by_name("search").clear()
         driver.find_element_by_name("search").send_keys("olamide.john@payfi.ng")
-        driver.find_element_by_name("search").send_keys(Keys.ENTER)
         driver.find_element_by_xpath(
             "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[3]/div/div/div/div/table/tbody/tr/td[3]/p").click()
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[5]/div/div[4]/button").click()
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[5]/div/div[4]/button[2]").click()
+        driver.find_element_by_name("comment").click()
+        driver.find_element_by_name("comment").clear()
+        driver.find_element_by_name("comment").send_keys("tis is fine")
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[5]/div/div[5]/div[2]/div/div[2]/div/div[5]/button").click()
         driver.find_element_by_xpath(
             "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div[2]/a/p").click()
         driver.find_element_by_xpath(
             "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[5]/div/div/div/div/div/p[2]").click()
-        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div").click()
         driver.find_element_by_xpath(
             "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div[3]/a/p").click()
         driver.find_element_by_xpath(
@@ -89,28 +62,20 @@ class AppDynamicsJob(unittest.TestCase):
         driver.find_element_by_xpath(
             "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div[6]/a/p").click()
         driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[5]/div/div/div[2]/div/div/div/div/table/tbody/tr/td[3]/p").click()
+        driver.find_element_by_xpath(
+            "(.//*[normalize-space(text()) and normalize-space(.)='olamide11 john11'])[1]/following::*[name()='svg'][2]").click()
+        driver.find_element_by_xpath(
             "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div[7]/a/p").click()
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[5]/div/div/div[2]/div/div/div/div/table/tbody/tr/td[5]/p").click()
+        driver.find_element_by_xpath(
+            "(.//*[normalize-space(text()) and normalize-space(.)='Loans'])[2]//*[name()='svg'][1]").click()
         driver.find_element_by_xpath(
             "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div[8]/a/p").click()
         driver.find_element_by_xpath(
             "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div[4]/div/div[9]/a/p").click()
         driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[3]/a/p").click()
-        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[4]/a/p").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[2]/div/div/p[2]").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[2]/div/div/p[3]").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[2]/div/div/p[4]").click()
-        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[5]/a/p").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[3]/div/div/div/div/table/tbody/tr/td/p").click()
-        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[6]/a/p").click()
-        driver.find_element_by_xpath(
-            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[3]/div/div/div/div/table/tbody/tr/td/p").click()
-        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[7]/a/p").click()
-        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[8]/a/p").click()
-        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[7]/a/p").click()
         driver.find_element_by_xpath(
             "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[2]").click()
         driver.find_element_by_xpath(
@@ -118,11 +83,40 @@ class AppDynamicsJob(unittest.TestCase):
         driver.find_element_by_xpath(
             "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[4]").click()
         driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[5]").click()
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[6]").click()
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[2]/div/div/p[2]").click()
+        driver.find_element_by_name("search").click()
+        driver.find_element_by_name("search").clear()
+        driver.find_element_by_name("search").send_keys("PAYFI CREDIT CHECK")
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div[3]/div/div/div/div/table/tbody/tr/td[2]/div/p[2]").click()
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[2]/div[3]/div/div[2]").click()
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[2]/div[3]/div/div[3]").click()
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[2]/div[3]/div/div[4]").click()
+        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[4]/a/p").click()
+        driver.find_element_by_name("search").click()
+        driver.find_element_by_name("search").click()
+        driver.find_element_by_name("search").clear()
+        driver.find_element_by_name("search").send_keys("Olamide John")
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div[2]/div[2]/div/div/div/div/div/div[3]/div/div/div/div[2]/table/tbody[14]/tr/td[3]/p").click()
+        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[5]/a/p").click()
+        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[6]/a/p").click()
+        driver.find_element_by_xpath("//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[2]/ul/li[7]/a/p").click()
+        driver.find_element_by_xpath(
+            "//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[3]/div[2]/ul/li[2]/a/p").click()
+        driver.find_element_by_xpath(
             "//div[@id='root']/div/div[2]/div/div/div/div/div/div/div[3]/div[2]/ul/li/a/p").click()
         driver.find_element_by_name("email").clear()
         driver.find_element_by_name("email").send_keys("Olamide.john@payfi.ng")
         driver.find_element_by_name("password").clear()
-        driver.find_element_by_").send_keys("Testqa1101$")
+        driver.find_element_by_name("password").send_keys("Testqa1101$")
 
     def is_element_present(self, how, what):
         try:
